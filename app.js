@@ -20,6 +20,8 @@ if (process.env.NODE_ENV === "development") {
 // DB Config
 var db = require("./config/db/keys").mongoURI;
 
+console.log(db);
+
 // Connect to Mongo
 mongoose
   .connect(db, {
