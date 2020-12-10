@@ -15,8 +15,7 @@ module.exports = {
         try {
             var items = await Item.find()
             .sort({ date: -1 })
-            .lean();
-
+            
             return items;
 
         } catch (err) {
